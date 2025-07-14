@@ -1,7 +1,7 @@
 This is assignment 3 for the OntarioLearn course Python for Web Development hosted by Sheridan College.
 Assignment 3: HTML Django templates
 
-User Name: jeremy pwd: Admin1234$
+User Name: jeremy pwd: Admin1234$  
 User Name: instructor pwd: DjangoRocks1!
 
 
