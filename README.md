@@ -1,6 +1,10 @@
 This is assignment 3 for the OntarioLearn course Python for Web Development hosted by Sheridan College.
 Assignment 3: HTML Django templates
 
+User Name: jeremy pwd: Admin1234$
+User Name: instructor pwd: DjangoRocks1!
+
+
 This assignment continues to build upon your blog project.
 
 For this assignment, you are tasked to style your base template using CSS. You will create a look & feel that best suits your taste and the content of your site. The design portion is a creative exercise, but technical considerations covered in this module will be evaluated.
