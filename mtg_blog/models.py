@@ -7,7 +7,7 @@ from django.utils.text import slugify
 class Topic(models.Model):
     """Creating the Topic models"""
     name = models.CharField(max_length=100, unique=True)
-    slug = models.SlugField(max_length=100, unique=True)
+    slug = models.SlugField(max_length=100, unique=True, blank=True)
 
     def save(self,*args,**kwargs):
         if not self.slug:
@@ -43,12 +43,12 @@ class Post(models.Model):
     def save(self, *args, **kwargs):
         if not self.slug:
             self.slug = slugify(self.title)
-
         #Set timestamp when published
         if self.status == 'published' and not self.published:
             self.published = timezone.now()
         elif self.status =='draft':
             self.published = None
+
         super().save(*args,**kwargs)
 
     def __str__(self):

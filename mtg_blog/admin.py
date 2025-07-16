@@ -21,6 +21,8 @@ class PostAdmin(admin.ModelAdmin):
     ordering = ('created',)
     filter_horizontal = ('topics',)
     inlines = [CommentInline]
+    #set the order of the fields on the page
+    fields = ('title', 'slug',  'status', 'author','content','topics')
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
